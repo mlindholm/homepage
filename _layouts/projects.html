@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div class="projects">
+  {% for post in site.posts %}
+    <article class="project" id="{{ post.title | slugify }}">
+      <div class="row">
+        <div class="col-12">
+          <div class="project-title">
+            <h2>{{ post.title }}</h2>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="project-info">
+            {% if post.skills %}
+              <ul>
+                {% for skills in post.skills %}
+                  <li>{{ skills }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}</div>
+        </div>
+        <div class="col-8">
+          <div class="project-description">
+            {{ post.content }}
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="project-images">
+            {% if post.img %}
+              {% for img in post.img %}
+                <img src="{{site.baseurl}}/img/loader.gif" data-src="{{site.baseurl}}/img/work/{{img}}" alt="{{ post.title | slugify }}" />
+              {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+</div>

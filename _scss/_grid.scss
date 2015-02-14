@@ -1,0 +1,74 @@
+/*
+ * Simple fluid grid by @thisismatu | http://git.io/GOM1MQ
+ *
+ * Based on Gridpak by @erskinedesign
+ * Inspired by Chris Coyiers article http://css-tricks.com/dont-overthink-it-grids/
+ *
+ */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+[class*='col-'] {
+    float: left;
+    padding-left: $gutter;
+}
+
+.row { margin-left: -$gutter }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-1 { width: 8.33333333333% }
+
+.col-2 { width: 16.6666666667% }
+
+.col-3 { width: 25.0% }
+
+.col-4 { width: 33.3333333333% }
+
+.col-5 { width: 41.6666666667% }
+
+.col-6 { width: 50.0% }
+
+.col-7 { width: 58.3333333333% }
+
+.col-8 { width: 66.6666666667% }
+
+.col-9 { width: 75.0% }
+
+.col-10 { width: 83.3333333333% }
+
+.col-11 { width: 91.6666666667% }
+
+.col-12 { width: 100% }
+
+.off-1 { margin-left: 8.33333333333% }
+
+.off-2 { margin-left: 16.6666666667% }
+
+.off-3 { margin-left: 25% }
+
+.center {
+    float: none;
+    margin: 0 auto;
+    padding-left: $gutter;
+}
+
+@media only screen and (max-width: 767px) {
+    [class*='col-'] {
+        float: none;
+        margin: 0;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .row { margin-left: 0 }
+}

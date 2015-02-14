@@ -1,0 +1,249 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0;
+    background: #ccc;
+    color: $black;
+    padding: 1em;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+[class*='col-'] img {
+  max-width: 100%;
+  height: auto;
+}
+
+html, body {
+  background: $white;
+}
+
+body {
+  color: $black;
+  font-family: "aktiv-grotesk-std", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-rendering: optimizeLegibility;
+}
+
+body.grid-baseline {
+  background-image: url(img/baseline-8.png);
+  background-position: center top;
+}
+
+.wrapper {
+  max-width: 1048px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+/* Typography */
+
+h1, h2, h3 {
+  font-size: $text;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 0 0 $padding*2 0;
+}
+
+p {
+  margin: 0 0 $padding*2 0;
+}
+
+ul {
+  margin: 0 0 $padding*2 0;
+  padding: 0;
+}
+
+
+.mute {
+  color: $grey;
+}
+a {
+  color: inherit;
+  text-decoration: underline;
+  -webkit-transition: all .2s ease-in-out 0s;
+  -moz-transition: all .2s ease-in-out 0s;
+  -o-transition: all .2s ease-in-out 0s;
+  -ms-transition: all .2s ease-in-out 0s;
+  transition: all .2s ease-in-out 0s;
+
+}
+
+a:hover {
+  color: lighten( $black, 10% );
+  text-decoration: underline;
+}
+
+a:active {
+  color: $teal;
+}
+
+a:focus {
+  outline: none;
+}
+
+/* Elements */
+
+.header {
+  padding: $padding*10 0 $padding*8;
+
+  .avatar {
+    display: inline-block;
+    float: left;
+    margin-right: $padding*3;
+    border-radius: 100px;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo {
+    margin: 0 0 $padding/2 0;
+  }
+
+}
+
+.navigation {
+  color: $grey;
+  text-decoration: none;
+
+  a {
+    color: $grey;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: inherit;
+  }
+
+  a.active {
+    color: $black;
+    text-decoration: underline;
+  }
+
+}
+
+.main {
+  padding-bottom: $padding*10;
+}
+
+.project {
+  padding-bottom: $padding*16;
+}
+
+.project:last-of-type {
+  padding-bottom: 0;
+}
+
+.project-info {
+  color: $grey;
+
+  li {
+    list-style: none
+  }
+
+  li:before {
+    content: "–";
+    padding-right: $padding;
+  }
+}
+
+.project-images img {
+  margin-top: $padding*3;
+}
+
+.footer {
+  color: $grey;
+  padding-bottom: $padding*8;
+}
+
+/* ==========================================================================
+   Media queries
+   ========================================================================== */
+
+@media only screen and (min-width: 1440px) {
+  .wrapper {
+    max-width: 1248px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    padding: 0 16px;
+  }
+}
