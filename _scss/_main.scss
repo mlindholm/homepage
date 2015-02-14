@@ -107,6 +107,14 @@ body.grid-baseline {
 
 /* Typography */
 
+.wf-loading {
+  visibility: none;
+}
+
+.wf-active {
+  visibility: visible;
+}
+
 h1, h2, h3 {
   font-size: $text;
   font-weight: 500;
