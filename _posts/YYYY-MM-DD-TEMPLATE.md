@@ -1,12 +1,10 @@
 ---
 layout: post
 robots: noindex, nofollow
-title: Title
-info_skills: Graphic Design, UI Design
-info_credit: Reaktor
-info_credit_url: http://reaktor.fi
-info_link: View project site
-info_link_url: http://site-url-here.com
+title: Title here
+skills:
+  - Graphic Design
+  - Interface Design
 img:
   - _01.jpg
   - _02.jpg
