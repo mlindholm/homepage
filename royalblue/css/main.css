@@ -71,10 +71,14 @@ img {
     padding: 0 30px;
 }
 
+.narrow {
+    max-width: 720px;
+    margin: 0 auto;
+}
 
 .header {
     background-color: #5988DD;
-    height: 700px;
+    height: 720px;
     color: white;
     padding-top: 60px;
     overflow: hidden;
@@ -100,6 +104,10 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
+    .narrow {
+        width: 100%;
+    }
+
     .header {
         height: auto;
     }
@@ -121,18 +129,4 @@ img {
     .header img {
         display: none;
     }
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
 }
