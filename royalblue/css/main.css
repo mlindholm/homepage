@@ -30,11 +30,16 @@ h3 {
 }
 
 p {
-    margin: 1em 0 1.5em 0;
+    margin: 0 0 1.5em 0;
 }
 
 a {
     color: #5988DD;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .btn {
@@ -53,6 +58,7 @@ a {
 
 .btn:hover {
     opacity: 0.85;
+    text-decoration: none;
 }
 
 img {
