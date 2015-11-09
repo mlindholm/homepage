@@ -5,9 +5,16 @@ avatar: /img/avatar_2x.jpg
 url: http://mlindholm.com
 baseurl: ""
 
+# Work settings
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      permalink: /work/:title/
+
 # Build settings
-markdown: redcarpet
-highlighter: pygments
+markdown: kramdown
 permalink: /:title/
 
 # Set the Sass partials directory, as we're using @imports

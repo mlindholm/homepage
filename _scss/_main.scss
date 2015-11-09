@@ -208,6 +208,12 @@ a:focus {
   padding-bottom: 0;
 }
 
+.project-title {
+  a {
+    text-decoration: none;
+  }
+}
+
 .project-info {
   color: $grey;
 
