@@ -1,30 +1,11 @@
-#
-# This file contains configuration flags to customize your site
-#
-
-# Name of your site (displayed in the header)
+# Site settings
 name: Mathias Lindholm
-
-# Short bio or description (displayed in the header)
 description: Mathias Lindholm. I’m a designer working with digital products and services. I enjoy designing user interfaces, developing brand identities and designing type.
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /img/avatar_2x.jpg
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
 url: http://mlindholm.com
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
-#
-# !! You don't need to change any of the configuration flags below !!
-#
-
+# Build settings
 markdown: redcarpet
 highlighter: pygments
 permalink: /:title/
@@ -34,9 +15,9 @@ sass:
   sass_dir: _scss
   style: :compressed # You might prefer to minify using :compressed
 
-# Use the following plug-ins
+# Gems to use
 gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - octopress-autoprefixer
 
 # Exclude these files from your production _site
 exclude:
