@@ -1,17 +1,10 @@
-jQuery("a[href^='http:'], a[href^='https:']").not("[href*='mathiaslindholm.com']").attr('target','_blank');
-jQuery("a[href^='http:'], a[href^='https:']").not("[href*='localhost']").attr('target','_blank');
-jQuery("a[href$='.pdf']").attr('target','_blank');
-
 $(document).ready(function() {
+  // open links and documents in new tab
+  $("a[href^='http:'], a[href^='https:']").not("[href*='mathiaslindholm.com']").attr('target','_blank');
+  $("a[href^='http:'], a[href^='https:']").not("[href*='localhost']").attr('target','_blank');
+  $("a[href$='.pdf']").attr('target','_blank');
 
-  // show grid
-    $('body').keydown(function(e) {
-      if(e.keyCode == 87) {
-        $('body').toggleClass('grid-baseline');
-      }
-    });
-
-	//lazyload images
+	// lazyload images
 	$('.project-images img').unveil();
 
 });
