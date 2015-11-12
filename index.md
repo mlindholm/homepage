@@ -3,7 +3,7 @@ layout: page
 active: index
 ---
 
-Moi. I’m a designer from Helsinki working with digital products and services. I spend most of my days designing user interfaces, developing brand identities and occasionally i designing type. I also know a thing or two about web development. I work as a designer over at [Reaktor](http://reaktor.fi).
+Moi. I’m a designer from Helsinki working with digital products and services. I spend most of my days designing user interfaces, developing brand identities and occasionally i design type. I also know a thing or two about web development. I work as a designer over at [Reaktor](http://reaktor.fi).
 
 Previously I’ve worked [here](http://ddb.fi/), [here](http://www.bond.fi/) and [here](http://barabra.fi/). Before that I studied at Arcada University of Applied Sciences from where I graduated in 2012 with my Bachelor of Arts degree.
 
