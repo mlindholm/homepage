@@ -5,12 +5,12 @@ url: http://mlindholm.com
 baseurl: ""
 
 # Work settings
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      permalink: /work/:title/
+# defaults:
+#   - scope:
+#       path: ""
+#       type: posts
+#     values:
+#       permalink: /work/:title/
 
 # Build settings
 markdown: kramdown
