@@ -2,66 +2,36 @@
 layout: compress
 ---
 
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!doctype html>
+<html class="no-js" lang="">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-
-    <title>{{ site.name }}{% if page.title %} - {{ page.title }}{% endif %}</title>
-
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.name }}{% if page.url != "/" and page.title %} - {{ page.title }}{% endif %}</title>
     <meta name="author" content="{{ site.name }}" />
     <meta name="description" content="{{ site.description }}">
-    {% if page.robots %}<meta name="robots" content="{{ page.robots }}" />{% endif %}
-
+    {% if page.robots %}
+      <meta name="robots" content="{{ page.robots }}" />
+    {% endif %}
     <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.png">
-
-    <script>
-      (function(d) {
-        var config = {
-          kitId: 'jjd8anc',
-          scriptTimeout: 3000
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-      })(document);
-    </script>
-
+    {% include typekit.html %}
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css" />
     <script src="{{ site.baseurl }}/js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
 
   <body>
-    <!--[if lt IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
     <div class="wrapper">
-
-      <header class="header">
-        <img class="avatar" src="{{ site.baseurl }}{{ site.avatar }}" alt="Mathias Lindholm">
-        <h1 class="logo">{{ site.name }}</h1>
-        <nav class="navigation">
-          <a href="{{ site.baseurl }}/" {% if page.active == 'index' %} class="active"{% endif %}>Index</a>
-          &ensp;/&ensp;
-          <a href="{{ site.baseurl }}/work" {% if page.active == 'work' %} class="active"{% endif %}>Work</a>
-        </nav>
-      </header>
-
       <section role="main" class="main">
         {{ content }}
       </section>
-
       <footer class="footer">
-          <p>© {{ site.time | date: '%Y' }} Mathias Lindholm, unless stated otherwise.</p>
+          <p>&copy; {{ site.time | date: '%Y' }} <a href="{{ site.url }}">{{ site.name }}</a></p>
       </footer>
-
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="{{ site.baseurl }}/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{{ site.baseurl }}/js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
     <script src="{{ site.baseurl }}/js/plugins.js"></script>
     <script src="{{ site.baseurl }}/js/main.js"></script>
   </body>

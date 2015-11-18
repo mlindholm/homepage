@@ -1,7 +1,6 @@
 # Site settings
 name: Mathias Lindholm
 description: I’m a designer from Helsinki working with digital products and services.
-avatar: /img/avatar_2x.jpg
 url: http://mlindholm.com
 baseurl: ""
 

@@ -1,6 +1,6 @@
 ---
 layout: projects
-title: Selected works
+title: Work
 active: work
 robots: noidex, nofollow
 permalink: /work/

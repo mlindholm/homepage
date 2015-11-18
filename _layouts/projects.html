@@ -2,40 +2,14 @@
 layout: default
 ---
 
-<div class="projects">
+<h1>{{ page.title }}</h1>
+
+<div class="project-images">
   {% for post in site.posts %}
-    <article class="project" id="{{ post.title | slugify }}">
-      <div class="row">
-        <div class="col-12">
-          <div class="project-title">
-            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="project-info">
-            {% if post.skills %}
-              <ul>
-                {% for skills in post.skills %}
-                  <li>{{ skills }}</li>
-                {% endfor %}
-              </ul>
-            {% endif %}</div>
-        </div>
-        <div class="col-8">
-          <div class="project-description">
-            {{ post.content }}
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="project-images">
-            {% if post.img %}
-              {% for img in post.img %}
-                <img src="{{site.baseurl}}/img/loader.gif" data-src="{{site.baseurl}}/img/work/{{img}}" alt="{{ post.title | slugify }}" />
-              {% endfor %}
-            {% endif %}
-          </div>
-        </div>
-      </div>
-    </article>
+    <a href="{{ post.url }}">
+      {% for img in post.img | limit: 1 %}
+        <img src="{{site.baseurl}}/img/work/{{img}}" alt="{{ post.title | slugify }}" />
+      {% endfor %}
+    </a>
   {% endfor %}
 </div>

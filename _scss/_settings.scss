@@ -1,0 +1,33 @@
+// Variables
+
+// Colors
+$teal: #3bb;
+
+// Grays
+$black: #212121;
+$gray: #9e9e9e;
+$white: #fff;
+
+// Text size
+$text: 18px;
+
+// Devices
+$phone: 480px;
+$tablet: 768px;
+
+
+// Mixins
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

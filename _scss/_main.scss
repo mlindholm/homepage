@@ -1,106 +1,40 @@
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+// Base
 
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
+html {
+  font-size: $text;
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between images, videos, audio and canvas and the bottom of
- * their containers: h5bp.com/i/440
- */
-
-audio,
-canvas,
-img,
-video {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
-   Browse Happy prompt
-   ========================================================================== */
-
-.browsehappy {
-    margin: 0;
-    background: #ccc;
-    color: $black;
-    padding: 1em;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-[class*='col-'] img {
-  max-width: 100%;
-  height: auto;
-}
-
-html, body {
-  background: $white;
+  @include media-query($phone) {
+    font-size: 16px;
+  }
 }
 
 body {
+  background: $white;
   color: $black;
   font-family: "aktiv-grotesk-std", sans-serif;
-  font-size: 18px;
+  font-size: $text;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.5;
   text-rendering: optimizeLegibility;
 }
 
 .wrapper {
-  max-width: 1048px;
-  padding: 0 24px;
-  margin: 0 auto;
+  max-width: 40rem;
+  margin: 8% 0 0 9%;
+  @include clearfix;
+
+  @include media-query($tablet) {
+    max-width: 100%;
+    margin: 0;
+    padding: 2rem 2rem 0 2rem;
+  }
+
+  @include media-query($phone) {
+    padding: 1rem 1rem 0 1rem;
+  }
 }
 
-/* Typography */
+// Typography
 
 .wf-loading {
   visibility: none;
@@ -111,144 +45,114 @@ body {
 }
 
 h1, h2, h3 {
-  font-size: $text;
-  font-weight: 500;
-  line-height: 28px;
-  margin: 0 0 $padding*2 0;
+  margin-top: 0;
+  font-weight: 400;
+  line-height: 1.333;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.large {
+  font-size: 1.334rem;
 }
 
 p {
-  margin: 0 0 $padding*2 0;
+  margin-top: 0;
 }
 
 ul {
-  margin: 0 0 $padding*2 0;
+  margin-bottom: 0 0 1rem 0;
   padding: 0;
+  list-style: none;
 }
 
-
-.mute {
-  color: $grey;
-}
 a {
   color: inherit;
-  text-decoration: underline;
+  text-decoration: none;
   transition: all .2s ease-in-out 0s;
-
 }
 
 a:hover {
-  color: lighten( $black, 10% );
+  color: lighten( $black, 30% );
   text-decoration: underline;
-}
-
-a:active {
-  color: $teal;
 }
 
 a:focus {
   outline: none;
 }
 
-/* Elements */
+// Elements
 
-.header {
-  padding: $padding*10 0 $padding*8;
-
-  .avatar {
-    display: inline-block;
-    float: left;
-    margin-right: $padding*3;
-    border-radius: 100px;
-    overflow: hidden;
-    width: 60px;
-    height: 60px;
-  }
-
-  .logo {
-    margin: 0 0 $padding/2 0;
-  }
-
+.space {
+  height: 2rem;
 }
 
-.navigation {
-  color: $grey;
-  text-decoration: none;
-
-  a {
-    color: $grey;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: inherit;
-  }
-
-  a.active {
-    color: $black;
-    text-decoration: underline;
-  }
-
+.wrapper img {
+  max-width: 100%;
+  height: auto
 }
 
-.main {
-  padding-bottom: $padding*10;
+hr {
+  background-color: #ddd;
+  height: 1px;
+  border: none;
+  outline: none;
+  margin: 2rem 0;
 }
 
-.project {
-  padding-bottom: $padding*16;
+// Page styles
+
+.title {
+  width: 75%;
 }
 
-.project:last-of-type {
-  padding-bottom: 0;
+.container {
+  display: flex;
+
+  @include media-query($phone) {
+    flex-direction: column;
+  }
+}
+
+.block {
+  margin: 0 1rem 2rem 0;
+  flex: 1 1 auto;
 }
 
 .project-title {
-  a {
-    text-decoration: none;
-  }
+  margin-bottom: 2rem;
 }
 
 .project-info {
-  color: $grey;
+  color: $gray;
+}
 
-  li {
-    list-style: none
-  }
-
-  li:before {
-    content: "–";
-    padding-right: $padding;
+.project-images {
+  img {
+    margin-top: 1rem;
   }
 }
 
-.project-images img {
-  margin-top: $padding*3;
-}
+// Footer
 
 .footer {
-  color: $grey;
-  padding-bottom: $padding*8;
-}
+  margin: 3rem 0 2rem 0;
+  color: $gray;
 
-/* ==========================================================================
-   Media queries
-   ========================================================================== */
-
-@media only screen and (min-width: 1440px) {
-  .wrapper {
-    max-width: 1248px;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .wrapper {
-    margin: 0 auto;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .wrapper {
-    padding: 0 16px;
+  p {
+    margin: 0;
   }
 }

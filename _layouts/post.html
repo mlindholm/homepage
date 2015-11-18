@@ -3,35 +3,33 @@ layout: default
 ---
 
 <article class="project" id="{{ page.title | slugify }}">
-  <div class="row">
-    <div class="col-12">
-      <div class="project-title">
-        <h2>{{ page.title }}</h2>
-      </div>
+  <h1 class="project-title">{{ page.title }}</h1>
+  {% if page.skills %}
+    <div class="project-info">
+      <ul>
+        {% for skills in page.skills %}
+          <li>{{ skills }}</li>
+        {% endfor %}
+      </ul>
     </div>
-    <div class="col-4">
-      <div class="project-info">
-        {% if page.skills %}
-          <ul>
-            {% for skills in page.skills %}
-              <li>{{ skills }}</li>
-            {% endfor %}
-          </ul>
-        {% endif %}</div>
-    </div>
-    <div class="col-8">
-      <div class="project-description">
-        {{ content }}
-      </div>
-    </div>
-    <div class="col-12">
-      <div class="project-images">
-        {% if page.img %}
-          {% for img in page.img %}
-            <img src="{{site.baseurl}}/img/loader.gif" data-src="{{site.baseurl}}/img/work/{{img}}" alt="{{ page.title | slugify }}" />
-          {% endfor %}
-        {% endif %}
-      </div>
-    </div>
+  {% endif %}
+  <div class="project-description">
+    {{ content }}
   </div>
+  {% if page.img %}
+    <div class="project-images">
+      {% for img in page.img %}
+        <img src="{{site.baseurl}}/img/work/{{img}}" alt="{{ page.title | slugify }}" />
+      {% endfor %}
+    </div>
+  {% endif %}
 </article>
+
+<hr>
+
+<h2>Work</h2>
+<ul>
+  {% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
