@@ -14,7 +14,7 @@ defaults:
 
 # Build settings
 markdown: kramdown
-permalink: /:title/
+permalink: pretty
 
 # Set the Sass partials directory, as we're using @imports
 sass:
