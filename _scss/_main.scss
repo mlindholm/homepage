@@ -2,17 +2,12 @@
 
 html {
   font-size: $text;
-
-  @include media-query($phone) {
-    font-size: 16px;
-  }
 }
 
 body {
   background: $white;
   color: $black;
   font-family: "aktiv-grotesk-std", sans-serif;
-  font-size: $text;
   font-weight: 400;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
@@ -53,11 +48,19 @@ h1, h2, h3 {
 h1 {
   font-size: 2rem;
   margin-bottom: 3rem;
+
+  @include media-query($phone) {
+    font-size: 1.8rem;
+  }
 }
 
 h2 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
+
+  @include media-query($phone) {
+    font-size: 1.4rem;
+  }
 }
 
 h3 {
@@ -67,6 +70,10 @@ h3 {
 
 .large {
   font-size: 1.334rem;
+
+  @include media-query($phone) {
+    font-size: 1.2rem;
+  }
 }
 
 p {
