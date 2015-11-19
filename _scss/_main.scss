@@ -15,7 +15,7 @@ body {
 
 .wrapper {
   max-width: 40rem;
-  margin: 8% 0 0 9%;
+  margin: 8% 9% 0 9%;
   @include clearfix;
 
   @include media-query($tablet) {
@@ -145,7 +145,7 @@ hr {
 }
 
 .project-title {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .project-info {
@@ -154,7 +154,13 @@ hr {
 
 .project-images {
   img {
+    width: 82vw;
+    max-width: 1000px;
     margin-top: 1rem;
+
+    @include media-query($tablet) {
+      width: 100%;
+    }
   }
 }
 
