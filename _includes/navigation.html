@@ -5,6 +5,8 @@
       {% for post in site.posts %}
         {% if page.url == post.url %}
           <li class="active">{{ post.title }}</li>
+        {% elsif post.link %}
+          <li class="external"><a href="{{ post.link }}">{{ post.title }} </li>
         {% else %}
           <li><a href="{{ post.url }}">{{ post.title }}</a></li>
         {% endif %}
