@@ -27,9 +27,4 @@ layout: default
 
 <hr>
 
-<h2>Work</h2>
-<ul>
-  {% for post in site.posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+{% include navigation.html %}

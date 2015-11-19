@@ -120,23 +120,28 @@ hr {
   margin: 2rem 0;
 }
 
-// Page styles
-
-.title {
-  width: 75%;
-}
-
-.container {
+.navigation {
   display: flex;
 
   @include media-query($phone) {
     flex-direction: column;
   }
+
+  .active:after {
+    content: '\2190';
+    padding-left: 0.5rem;
+  }
 }
 
 .block {
-  margin: 0 1rem 2rem 0;
+  margin: 0 1rem 1rem 0;
   flex: 1 1 auto;
+}
+
+// Page styles
+
+.title {
+  width: 75%;
 }
 
 .project-title {
