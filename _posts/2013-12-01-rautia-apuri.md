@@ -4,7 +4,7 @@ robots: noindex, nofollow
 title: Rautia Apuri
 skills: 
   - Graphic Design
-  - Interface Design
+  - User Interface Design
 img:
   - apuri_02.jpg
   - apuri_03.jpg

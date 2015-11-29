@@ -4,7 +4,7 @@ robots: noindex, nofollow
 title: Title here
 skills:
   - Graphic Design
-  - Interface Design
+  - User Interface Design
 img:
   - _01.jpg
   - _02.jpg
