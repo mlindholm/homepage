@@ -15,7 +15,8 @@ body {
 
 .wrapper {
   max-width: 40rem;
-  margin: 8% 9% 0 9%;
+  margin: 0 auto;
+  margin-top: 8%;
   @include clearfix;
 
   @include media-query($tablet) {
@@ -131,12 +132,13 @@ hr {
     content: '\2190';
     padding-left: 0.5rem;
   }
+
+  .block {
+    margin: 0 1rem 1rem 0;
+    flex: 1 1 auto;
+  }
 }
 
-.block {
-  margin: 0 1rem 1rem 0;
-  flex: 1 1 auto;
-}
 
 // Page styles
 
@@ -144,22 +146,40 @@ hr {
   width: 75%;
 }
 
-.project-title {
-  margin-bottom: 1rem;
-}
+.project {
+  margin-bottom: 3rem;
+  @include clearfix;
 
-.project-info {
-  color: $gray;
-}
+  .project-title {
+    margin-bottom: 1rem;
+  }
 
-.project-images {
-  img {
-    width: 82vw;
-    max-width: 1000px;
-    margin-top: 1rem;
+  .project-info {
+    color: $gray;
+  }
+
+  .project-images {
+    position: relative;
+    float: right;
+    right: 50%;
 
     @include media-query($tablet) {
-      width: 100%;
+      float: none;
+      right: 0;
+    }
+
+    img {
+      display: block;
+      position: relative;
+      right: -50%;
+      width: 82vw;
+      max-width: 1000px;
+      margin-top: 1rem;
+
+      @include media-query($tablet) {
+        width: 100%;
+        right: 0;
+      }
     }
   }
 }
