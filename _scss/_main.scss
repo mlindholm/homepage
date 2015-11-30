@@ -163,23 +163,14 @@ hr {
     float: right;
     right: 50%;
 
-    @include media-query($tablet) {
-      float: none;
-      right: 0;
-    }
-
     img {
       display: block;
       position: relative;
       right: -50%;
-      width: 82vw;
-      max-width: 1000px;
+      width: 100vw;
+      max-width: 60rem;
       margin-top: 1rem;
-
-      @include media-query($tablet) {
-        width: 100%;
-        right: 0;
-      }
+      padding: 0 1rem;
     }
   }
 }
