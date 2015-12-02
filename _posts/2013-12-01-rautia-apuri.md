@@ -11,7 +11,7 @@ img:
   - apuri_04.jpg
 ---
 
-Rautia's handy Apuri app got a facelift. The old app was cluttered and cumbersome to use, so I re-designed the whole interface with a focus on simplicity and usability. I even gave the app icon a polish. Available for iOS, Windows Phone and Android.
+Rautia's handy Apuri app got a facelift. The old app was cluttered and cumbersome to use, so the whole interface was re-designed with a focus on simplicity and usability. Even the app icon got a polish. Available for iOS, Windows Phone and Android.
 
 [Rautia Apuri on the App Store](https://itunes.apple.com/us/app/rautia-apuri/id524323705?mt=8)  
 Made at [DDB](http://ddb.fi)
