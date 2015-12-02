@@ -153,9 +153,13 @@ hr {
     flex-direction: column;
   }
 
-  .active:after {
-    content: '\2190';
-    padding-left: 0.5rem;
+  .active {
+    color: $gray;
+
+    &:after {
+      content: '\2022';
+      padding-left: 0.5rem;
+    }
   }
 
   .block {
