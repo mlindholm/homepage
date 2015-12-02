@@ -1,4 +1,4 @@
 ---
 title: Royal Blue Theme
-link: http://mlindholm.com/royalblue/
+ext_link: http://mlindholm.com/royalblue/
 ---

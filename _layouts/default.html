@@ -25,10 +25,10 @@ layout: compress
       {% if page.url != '/'%}
       <div class="pagination">
         {% if page.next.url %}
-          <a href="{% if page.next.link %}{{ page.next.link}}{% else %}{{page.next.url}}{% endif %}">‹ Previous</a>
+          <a href="{% if page.next.ext_link %}{{ page.next.ext_link}}{% else %}{{page.next.url}}{% endif %}">‹ Previous</a>
         {% endif %}
         {% if page.previous.url %}
-          <a href="{% if page.previous.link %}{{ page.previous.link}}{% else %}{{page.previous.url}}{% endif %}">Next ›</a>
+          <a href="{% if page.previous.ext_link %}{{ page.previous.ext_link}}{% else %}{{page.previous.url}}{% endif %}">Next ›</a>
         {% endif %}
       </div>
       {% endif %}
