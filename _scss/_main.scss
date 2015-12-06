@@ -186,6 +186,10 @@ hr {
 
   .title {
     width: 75%;
+
+    @include media-query($phone) {
+      width: 100%;
+    }
   }
 }
 
