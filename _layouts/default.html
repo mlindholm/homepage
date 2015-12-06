@@ -20,19 +20,7 @@ layout: compress
   </head>
 
   <body>
-    <nav class="main-navigation">
-      <a href="{{ site.baseurl }}/">ML</a>
-      {% if page.url != '/'%}
-      <div class="pagination">
-        {% if page.next.url %}
-          <a href="{% if page.next.ext_link %}{{ page.next.ext_link}}{% else %}{{page.next.url}}{% endif %}">‹ Previous</a>
-        {% endif %}
-        {% if page.previous.url %}
-          <a href="{% if page.previous.ext_link %}{{ page.previous.ext_link}}{% else %}{{page.previous.url}}{% endif %}">Next ›</a>
-        {% endif %}
-      </div>
-      {% endif %}
-    </nav>
+    {% include main-navigation.html %}
     <div class="wrapper">
       <section role="main" class="main">
         {{ content }}
