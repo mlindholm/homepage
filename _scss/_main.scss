@@ -107,9 +107,14 @@ a.no-underline {
     color: $gray;
     padding: 1rem;
     @extend a.no-underline;
+
+    &:hover {
+      background-color: #f5f5f5;
+    }
   }
 
   .logo {
+    font-weight: bold;
     margin-left: -1rem;
   }
 
@@ -123,10 +128,6 @@ a.no-underline {
 
       &:first-child {
         margin-right: -1px;
-      }
-
-      &:hover {
-        background-color: #f5f5f5;
       }
     }
   }
