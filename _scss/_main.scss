@@ -116,6 +116,13 @@ a.no-underline {
 
   .logo {
     margin-left: -1rem;
+
+    svg {
+      display: block;
+      fill: $gray;
+      width: 24px;
+      height: 24px;
+    }
   }
 
   .pagination {
