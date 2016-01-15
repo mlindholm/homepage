@@ -151,8 +151,12 @@ a.no-underline {
     color: $gray;
 
     &:after {
-      content: '\2022';
+      content: url('../img/ic_remove_red_eye_black_18px.svg');
+      display: inline-block;
+      vertical-align: text-top;
       padding-left: 0.5rem;
+      width: 1rem;
+      height: 1rem;
     }
   }
 
@@ -164,7 +168,6 @@ a.no-underline {
       padding-left: 0.5rem;
       width: 1rem;
       height: 1rem;
-      opacity: 0.54;
     }
   }
 
