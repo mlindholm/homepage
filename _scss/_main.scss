@@ -7,7 +7,7 @@ html {
 body {
   background: $white;
   color: $black;
-  font-family: "Georgia", serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
@@ -97,6 +97,7 @@ a.no-underline {
 // Navigation
 
 .main-navigation {
+  font-size: 16px;
   color: $gray;
   border-bottom: 1px solid #E0E0E0;
   @include clearfix;
