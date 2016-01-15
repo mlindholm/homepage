@@ -8,11 +8,15 @@
     </a>
     {% if page.url != '/'%}
     <div class="pagination">
-      {% if page.next.url %}
-        <a href="{% if page.next.ext_link %}{{ page.next.ext_link}}{% else %}{{page.next.url}}{% endif %}">‹ Previous</a>
+      {% if page.next %}
+        {% unless page.next contains 'ext_link' %}
+          <a href="{% if page.next.ext_link %}{{ page.next.ext_link}}{% else %}{{page.next.url}}{% endif %}">‹ Previous</a>
+        {% endunless %}
       {% endif %}
-      {% if page.previous.url %}
-        <a href="{% if page.previous.ext_link %}{{ page.previous.ext_link}}{% else %}{{page.previous.url}}{% endif %}">Next ›</a>
+      {% if page.previous %}
+        {% unless page.previous contains 'ext_link' %}
+          <a href="{% if page.previous.ext_link %}{{ page.previous.ext_link}}{% else %}{{page.previous.url}}{% endif %}">Next ›</a>
+        {% endunless %}
       {% endif %}
     </div>
     {% endif %}
