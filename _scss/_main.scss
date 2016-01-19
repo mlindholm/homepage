@@ -58,6 +58,12 @@ h3 {
   font-size: 1.176rem;
 }
 
+.sc {
+  font-size: $text-small;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;
