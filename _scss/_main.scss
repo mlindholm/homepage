@@ -27,12 +27,13 @@ body {
 h1, h2, h3 {
   margin-top: 0;
   font-weight: 400;
-  line-height: 1.333;
+  line-height: 1.25;
 }
 
 h1 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 1.882rem;
+  font-weight: 300;
+  margin-bottom: 1.882rem;
 
   @include media-query($phone) {
     font-size: 1.667rem;
@@ -40,33 +41,30 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.412rem;
+  margin-bottom: 1.412rem;
 
   @include media-query($phone) {
-    font-size: 1.334rem;
+    font-size: 1.235rem;
   }
 }
 
 h3 {
-  font-size: 1.125rem;
+  font-size: 1.176rem;
   margin-bottom: 1rem;
 }
 
 .large {
-  font-size: 1.334rem;
-
-  @include media-query($phone) {
-    font-size: 1.125rem;
-  }
+  font-size: 1.176rem;
 }
 
 p {
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 ul {
-  margin-bottom: 0 0 1rem 0;
+  margin: 0 0 1rem 0;
   padding: 0;
   list-style: none;
 }
@@ -97,16 +95,17 @@ a.no-underline {
 // Navigation
 
 .main-navigation {
-  font-size: 16px;
+  font-size: $text-small;
+  line-height: 24px;
   color: $gray;
-  border-bottom: 1px solid #E0E0E0;
+  box-shadow: 0 1px 0 #E0E0E0;
   @include clearfix;
 
   a {
     display: block;
     float: left;
     color: $gray;
-    padding: 1rem;
+    padding: 16px;
     @extend a.no-underline;
 
     &:hover {
@@ -115,7 +114,7 @@ a.no-underline {
   }
 
   .logo {
-    margin-left: -1rem;
+    margin-left: -16px;
 
     svg {
       display: block;
@@ -208,10 +207,10 @@ hr {
   }
 
   .title {
-    width: 75%;
-
-    @include media-query($phone) {
-      width: 100%;
+    br {
+      @include media-query($phone) {
+        display: none;
+      }
     }
   }
 }
@@ -249,7 +248,8 @@ hr {
 // Footer
 
 .footer {
-  margin: 2rem 0;
+  font-size: $text-small;
+  margin: 2rem 0 3rem;
   color: $gray;
 
   p {
