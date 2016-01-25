@@ -13,5 +13,4 @@ img:
 
 Resultat is a mechanical sans-serif with a humanistic touch that I made as a part of my thesis in 2012. I designed it to be used as a body typeface and it has a basic latin language support. It's designen with screens and handheld devices in mind, but it works equaly well in print.
 
-[Download font & specimen](http://thesis.mathiaslindholm.com/#downloads)  
-[Visit the project site](http://thesis.mathiaslindholm.com/)
+[Download font & specimen](https://github.com/mlindholm/resultat)
