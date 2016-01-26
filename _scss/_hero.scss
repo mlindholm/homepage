@@ -1,0 +1,9 @@
+{% if page.hero_image %}
+  background-image: url({{ page.hero_image }}) no-repeat center;
+  {% if page.hero_bg %}
+    background-color: {{ page.hero_bg }};
+  {% endif %}
+  {% if page.hero_size %}
+    background-size: {{ page.hero_size }}}
+  {% endif %}
+{% endif %}

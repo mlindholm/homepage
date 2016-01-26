@@ -184,6 +184,20 @@ a.no-underline {
 }
 
 
+// Hero
+
+.hero {
+  text-align: center;
+  height: 480px;
+
+  img {
+    height: 200px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+
 // Elements
 
 .space {
