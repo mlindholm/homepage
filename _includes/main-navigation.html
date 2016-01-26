@@ -10,12 +10,12 @@
     <div class="pagination">
       {% if page.next %}
         {% unless page.next contains 'ext_link' %}
-          <a href="{% if page.next.ext_link %}{{ page.next.ext_link}}{% else %}{{page.next.url}}{% endif %}">‹ Previous</a>
+          <a href="{% if page.next.ext_link %}{{ page.next.ext_link}}{% else %}{{page.next.url}}{% endif %}" class="previous">‹ Previous</a>
         {% endunless %}
       {% endif %}
       {% if page.previous %}
         {% unless page.previous contains 'ext_link' %}
-          <a href="{% if page.previous.ext_link %}{{ page.previous.ext_link}}{% else %}{{page.previous.url}}{% endif %}">Next ›</a>
+          <a href="{% if page.previous.ext_link %}{{ page.previous.ext_link}}{% else %}{{page.previous.url}}{% endif %}" class="next">Next ›</a>
         {% endunless %}
       {% endif %}
     </div>

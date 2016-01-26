@@ -105,7 +105,8 @@ a.no-underline {
   font-size: $text-small;
   line-height: 24px;
   color: $gray;
-  box-shadow: 0 1px 0 #E0E0E0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.125);
+  position: relative;
   @include clearfix;
 
   a {
@@ -136,11 +137,11 @@ a.no-underline {
     margin-right: -1rem;
 
     a {
-      border-left: 1px solid #e0e0e0;
-      border-right: 1px solid #e0e0e0;
+      border-left: 1px solid rgba(0,0,0,0.125);
+      border-right: 1px solid rgba(0,0,0,0.125);
 
-      &:first-child {
-        margin-right: -1px;
+      &.previous {
+        border-right: none;
       }
     }
   }
