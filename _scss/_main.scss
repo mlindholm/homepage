@@ -189,8 +189,12 @@ a.no-underline {
 .hero {
   height: 480px;
 
+  @include media-query($tablet) {
+    height: 360px;
+  }
+
   @include media-query($phone) {
-    height: 320px;
+    height: 240px;
   }
 }
 
