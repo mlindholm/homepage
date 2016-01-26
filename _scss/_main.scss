@@ -171,7 +171,7 @@ a.no-underline {
     &:after {
       content: url('../img/ic_open_in_new_black_18px.svg');
       display: inline-block;
-      vertical-align: text-top;
+      vertical-align: -3px;
       padding-left: 0.5rem;
       width: 1rem;
       height: 1rem;
