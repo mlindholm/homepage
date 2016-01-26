@@ -170,7 +170,7 @@ a.no-underline {
       }
     }
 
-    .external {
+    &.external {
       &:after {
         content: url('../img/ic_open_in_new_black_18px.svg');
       }
