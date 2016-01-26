@@ -22,7 +22,7 @@ layout: compress
   <body>
     {% include main-navigation.html %}
     {% if page.hero_image %}
-      <div class="hero" style="background: {{ page.hero_bg }} url({{ page.hero_image }}) no-repeat center; background-size: {{ page.hero_size }}">
+      <div class="hero" style="background: {{ page.hero_bg }} url({{ page.hero_image }}) no-repeat {{ page.hero_position }}; background-size: {{ page.hero_size }}">
       </div>
     {% endif %}
     <div class="wrapper">
