@@ -1,8 +1,9 @@
 ---
 layout: page
-hero_image: http://3.bp.blogspot.com/-mGKi9Q_gTK8/VT_UktHzkhI/AAAAAAAAg9s/QXUqim4qeA0/s1600/slinky.gif
-hero_bg: '#efefef'
-hero_size: '240px'
+hero_image: /img/illustration.png
+hero_bg: '#ECEDF2'
+hero_position: 'center bottom'
+hero_size: 'contain'
 ---
 
 <h1 class="title">Mathias Lindholm is a designer <br>from Helsinki</h1>
