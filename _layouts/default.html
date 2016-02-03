@@ -10,7 +10,7 @@ layout: compress
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.name }}</title>
     <meta name="author" content="{{ site.name }}" />
-    <meta name="description" content="{% if page.url == '/'%}{{ site.description }}{% else %}{{ page.excerpt | strip_html }}{% endif %}">
+    <meta name="description" content="{% if page.is_index %}{{ site.description }}{% else %}{{ page.excerpt | remove: '<img>' | strip_html }}{% endif %}">
     {% if page.robots %}
       <meta name="robots" content="{{ page.robots }}" />
     {% endif %}
