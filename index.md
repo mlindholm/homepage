@@ -2,7 +2,7 @@
 layout: page
 is_index: true
 hero_image: /img/illustration.png
-hero_bg: '#ECEDF2'
+hero_bg: '#EDEFF2'
 hero_position: 'center bottom'
 hero_size: 'contain'
 ---
