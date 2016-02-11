@@ -147,10 +147,14 @@ a.no-underline {
 }
 
 .sub-navigation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 
   @include media-query($phone) {
-    flex-direction: column;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   li {
@@ -179,7 +183,9 @@ a.no-underline {
 
   .block {
     margin: 0 1rem 1rem 0;
-    flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
   }
 }
 

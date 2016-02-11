@@ -16,7 +16,7 @@ sass:
 
 # Gems to use
 gems:
-  - octopress-autoprefixer
+  - jekyll-paginate
 
 # Exclude these files from your production _site
 exclude:
