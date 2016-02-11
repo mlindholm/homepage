@@ -22,7 +22,7 @@ layout: default
   {% if page.img %}
     <div class="project-images">
       {% for img in page.img %}
-        <img src="{{site.baseurl}}/img/work/{{img}}" alt="{{ page.title | slugify }}" />
+        <img src="{{ site.baseurl }}/img/work/{{ img }}" srcset="{{ site.baseurl }}/img/work/{{ img }} 1x, {{ site.baseurl }}/img/work/{{ img | replace: '.jpg', '@2x.jpg' | replace: '.png', '@2x.png' }} 2x" alt="{{ page.title | slugify }}" />
       {% endfor %}
     </div>
   {% endif %}
