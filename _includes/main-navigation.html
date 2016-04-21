@@ -10,7 +10,7 @@
     <div class="pagination">
       {% if page.next %}
         {% unless page.next contains 'ext_link' %}
-          <a href="{{page.next.url}}" class="previous">‹ Previous</a>
+          <a href="{{page.next.url}}" class="previous{% unless page.previous %}-last{% endunless %}">‹ Previous</a>
         {% endunless %}
       {% endif %}
       {% if page.previous %}
