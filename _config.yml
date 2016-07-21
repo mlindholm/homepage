@@ -14,10 +14,6 @@ sass:
   sass_dir: _scss
   style: :compressed # You might prefer to minify using :compressed
 
-# Gems to use
-gems:
-  - jekyll-paginate
-
 # Exclude these files from your production _site
 exclude:
     - Gemfile
