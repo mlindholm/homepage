@@ -6,19 +6,15 @@
           <path d="M0 0h24v24H0z" fill="none"/>
       </svg>
     </a>
-    {% if page.url != '/'%}
+    {% unless page.url == "/" %}
     <div class="pagination">
-      {% if page.next %}
-        {% unless page.next contains 'ext_link' %}
+      {% unless page.next.ext_link %}
           <a href="{{page.next.url}}" class="previous{% unless page.previous %}-last{% endunless %}">‹ Previous</a>
-        {% endunless %}
-      {% endif %}
-      {% if page.previous %}
-        {% unless page.previous contains 'ext_link' %}
+      {% endunless %}
+      {% unless page.previous.ext_link %}
           <a href="{{page.previous.url}}" class="next">Next ›</a>
-        {% endunless %}
-      {% endif %}
+      {% endunless %}
     </div>
-    {% endif %}
+    {% endunless %}
   </div>
 </nav>
