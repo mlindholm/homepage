@@ -13,4 +13,4 @@ I spend most of my time designing user interfaces, prototyping new ideas, develo
 
 <div class="space"></div>
 
-{% include sub-navigation.html %}
+{% include thumbnail-navigation.html %}

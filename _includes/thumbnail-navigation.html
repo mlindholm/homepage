@@ -1,0 +1,46 @@
+<h3>Side projects</h3>
+<div class="thumbnail-navigation">
+  {% for post in site.posts %}
+    {% if post.ext_link %}
+      <div class="block">
+        <a href="{{ post.ext_link }}">
+          <div class="image"  style="background-image: url({{ post.ext_img }})"></div>
+          <p class="external">{{ post.title }}</p>
+        </a>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<div class="space"></div>
+
+<h3>Work</h3>
+<div class="thumbnail-navigation">
+  {% for post in site.posts %}
+    {% unless post.ext_link %}
+      <div class="block">
+        <a href="{{ post.url }}">
+          <div class="image"  style="background-image: url({{ site.baseurl }}/img/work/{{ post.img | first }})"></div>
+          <p>{{ post.title }}</p>
+        </a>
+      </div>
+    {% endunless %}
+  {% endfor %}
+</div>
+
+<div class="space"></div>
+
+<div class="sub-navigation">
+  <div class="block">
+    <h3>Connect</h3>
+    <ul>
+      <li><a href="http://mlindholm.tumblr.com/">Tumblr</a></li>
+      <li><a href="http://twitter.com/#!/thisismatu">Twitter</a></li>
+      <li><a href="http://designspiration.net/mlindholm/">Designspiration</a></li>
+      <li><a href="http://flickr.com/photos/matu187/">Flickr</a></li>
+      <li><a href="https://github.com/mlindholm">Github</a></li>
+      <li><a href="https://dribbble.com/thisismatu">Dribbble</a></li>
+      <li><a href="https://pinboard.in/u:mlindholm/">Pinboard</a></li>
+    </ul>
+  </div>
+</div>
