@@ -6,7 +6,7 @@
     {% if post.ext_link %}
       <div class="block">
         <a href="{{ post.ext_link }}">
-          <div class="image"  style="background-image: url({{ post.ext_img }})"></div>
+          <img src="{{ post.ext_img }}" alt="{{ post.title.slugify }}">
           <p class="external">{{ post.title }}</p>
         </a>
       </div>
@@ -22,7 +22,7 @@
     {% unless post.ext_link %}
       <div class="block">
         <a href="{{ post.url }}">
-          <div class="image"  style="background-image: url({{ site.baseurl }}/img/work/{{ post.img | first }})"></div>
+          <img src="{{ site.baseurl }}/img/work/{{ post.img | first }}" alt="{{ post.title.slugify }}">
           <p>{{ post.title }}</p>
         </a>
       </div>

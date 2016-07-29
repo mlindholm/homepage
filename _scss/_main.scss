@@ -154,14 +154,6 @@ a.no-underline {
     padding-left: 1rem;
     width: 50%;
 
-    .image {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 12rem;
-      margin-bottom: 0.5rem;
-    }
-
     a {
       display: block;
       @extend a.no-underline;
