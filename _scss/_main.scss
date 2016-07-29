@@ -206,10 +206,11 @@ a.no-underline {
     -webkit-flex: 1 1 auto;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
+    margin-bottom: 1rem;
 
-    &:first-child {
+    &:last-child {
       @include media-query($phone) {
-        margin-bottom: 1rem;
+        margin-bottom: 0;
       }
     }
   }
