@@ -14,8 +14,8 @@ body {
 }
 
 .wrapper {
-  max-width: 42rem;
   margin: 0 auto;
+  max-width: 45rem;
   padding-left: 1rem;
   padding-right: 1rem;
   @include clearfix;
@@ -25,9 +25,9 @@ body {
 // Typography
 
 h1, h2, h3 {
-  margin-top: 0;
   font-weight: 500;
   line-height: 1.25;
+  margin-top: 0;
 }
 
 h1 {
@@ -52,13 +52,13 @@ h3 {
 .sc {
   font-size: $text-small;
   font-weight: 500;
-  text-transform: uppercase;
   letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 p {
-  margin-top: 0;
   margin-bottom: 1rem;
+  margin-top: 0;
 }
 
 strong {
@@ -66,18 +66,18 @@ strong {
 }
 
 ul {
+  list-style: none;
   margin: 0 0 1rem 0;
   padding: 0;
-  list-style: none;
 }
 
 a {
+  box-shadow: inset 0 -1px 0 0 $white, inset 0 -2px 0 0 $lightgray;
   color: inherit;
   text-decoration: none;
-  transition: all .2s ease-in-out 0s;
   text-decoration: none;
   text-shadow: 1px 1px 0 $white, -1px 1px 0 $white, 2px 0 0 $white, -2px 0 0 $white;
-  box-shadow: inset 0 -1px 0 0 $white, inset 0 -2px 0 0 $lightgray;
+  transition: all .2s ease-in-out 0s;
 }
 
 a:hover {
@@ -89,25 +89,25 @@ a:focus {
 }
 
 a.no-underline {
-  text-shadow: none;
   box-shadow: none;
+  text-shadow: none;
 }
 
 
 // Navigation
 
 .main-navigation {
+  box-shadow: 0 1px 0 rgba(0,5,10,0.125);
+  color: $gray;
   font-size: $text-small;
   line-height: 24px;
-  color: $gray;
-  box-shadow: 0 1px 0 rgba(0,5,10,0.125);
   position: relative;
   @include clearfix;
 
   a {
+    color: $gray;
     display: block;
     float: left;
-    color: $gray;
     padding: 16px;
     @extend a.no-underline;
 
@@ -121,8 +121,8 @@ a.no-underline {
 
     svg {
       display: block;
-      width: 24px;
       height: 24px;
+      width: 24px;
     }
   }
 
@@ -141,47 +141,24 @@ a.no-underline {
   }
 }
 
-.sub-navigation, .thumbnail-navigation {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-
-  @include media-query($phone) {
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .block {
-    margin: 0 1rem 1rem 0;
-    -webkit-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
-  }
-}
+// Thumbnail navigation
 
 .thumbnail-navigation {
+  display: flex;
   flex-wrap: wrap;
-  margin: 0 0 0 -1rem;
-  padding: 0;
+  margin-left: -1rem;
 
   .block {
     flex: 1 1 auto;
-    margin: 0;
+    max-width: 50%;
     padding-left: 1rem;
     width: 50%;
-    max-width: 50%;
-
-    @include media-query($phone) {
-      width: 100%;
-      max-width: 100%;
-    }
 
     .image {
-      height: 12rem;
-      background-size: cover;
-      background-repeat: no-repeat;
       background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 12rem;
       margin-bottom: 0.5rem;
     }
 
@@ -191,47 +168,33 @@ a.no-underline {
     }
 
     p {
-      &:after {
-        display: inline-block;
-        vertical-align: -3px;
-        padding-left: 0.5rem;
-        width: 1rem;
-        height: 1rem;
-      }
-
-      &.external {
-        &:after {
-          content: url('../img/ic_open_in_new_black_18px.svg');
-        }
-      }
+      @include navigation-elements;
     }
   }
 }
 
+// List navigation
+
 .sub-navigation {
+  display: flex;
+
+  @include media-query($phone) {
+    flex-direction: column;
+  }
+
+  .block {
+    flex: 1 1 auto;
+
+    &:first-child {
+      @include media-query($phone) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
 
   li {
-    &:after {
-      display: inline-block;
-      vertical-align: -3px;
-      padding-left: 0.5rem;
-      width: 1rem;
-      height: 1rem;
-    }
-
-    &.active {
-      color: $gray;
-
-      &:after {
-        content: url('../img/ic_remove_red_eye_black_18px.svg');
-      }
-    }
-
-    &.external {
-      &:after {
-        content: url('../img/ic_open_in_new_black_18px.svg');
-      }
-    }
+    @include navigation-elements;
   }
 }
 
