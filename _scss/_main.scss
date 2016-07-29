@@ -117,7 +117,7 @@ a.no-underline {
   }
 
   .logo {
-    margin-left: -16px;
+    margin-left: -1rem;
 
     svg {
       display: block;
@@ -128,14 +128,25 @@ a.no-underline {
 
   .pagination {
     float: right;
-    margin-right: -1rem;
 
-    a {
+    @include media-query($phone) {
+      margin-right: -1rem;
+    }
+
+    .next {
       border-left: 1px solid rgba(0,5,10,0.125);
       border-right: 1px solid rgba(0,5,10,0.125);
 
-      &.previous {
+      @include media-query($phone) {
         border-right: none;
+      }
+    }
+
+    .previous {
+      border-left: 1px solid rgba(0,5,10,0.125);
+
+      &.last {
+        border-right: 1px solid rgba(0,5,10,0.125);
       }
     }
   }
@@ -166,6 +177,9 @@ a.no-underline {
     }
 
     p {
+      @include media-query($phone) {
+        font-size: $text-small;
+      }
       @include navigation-elements;
     }
   }
