@@ -1,4 +1,4 @@
-// Base
+/* Base*/
 
 html {
   font-size: $text;
@@ -22,7 +22,7 @@ body {
 }
 
 
-// Typography
+/* Typography*/
 
 h1, h2, h3 {
   font-weight: 500;
@@ -94,7 +94,7 @@ a.no-underline {
 }
 
 
-// Navigation
+/* Navigation*/
 
 .main-navigation {
   box-shadow: 0 1px 0 rgba(0,5,10,0.125);
@@ -141,15 +141,21 @@ a.no-underline {
   }
 }
 
-// Thumbnail navigation
+/* Thumbnail navigation*/
 
 .thumbnail-navigation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   margin-left: -1rem;
 
   .block {
-    flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
     max-width: 50%;
     padding-left: 1rem;
     width: 50%;
@@ -165,17 +171,23 @@ a.no-underline {
   }
 }
 
-// List navigation
+/* List navigation*/
 
 .sub-navigation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 
   @include media-query($phone) {
-    flex-direction: column;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .block {
-    flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
 
     &:first-child {
       @include media-query($phone) {
@@ -191,7 +203,7 @@ a.no-underline {
 }
 
 
-// Hero
+/* Hero*/
 
 .hero {
   height: 480px;
@@ -206,7 +218,7 @@ a.no-underline {
 }
 
 
-// Elements
+/* Elements*/
 
 .space {
   height: 2rem;
@@ -226,7 +238,7 @@ hr {
 }
 
 
-// Page styles
+/* Page styles*/
 
 .main {
   margin-top: 4rem;
@@ -274,7 +286,7 @@ hr {
   }
 }
 
-// Footer
+/* Footer*/
 
 .footer {
   font-size: $text-small;
