@@ -1,9 +1,11 @@
 // Variables
 
 // Grays
-$black: #191e23;
-$gray: #999b9d;
-$lightgray: #cccdce;
+$grey-900: hsl(240, 8, 15);
+$grey-700: hsl(240, 8, 20);
+$grey-500: hsl(240, 4, 60);
+$grey-300: hsl(240, 2, 87);
+$grey-100: hsl(240, 2, 97);
 $white: #fff;
 
 // Text size
@@ -41,7 +43,7 @@ $tablet: 768px;
   }
 
   &.active {
-    color: $gray;
+    color: $grey-500;
 
     &:after {
       content: url('../img/ic_remove_red_eye_black_18px.svg');
