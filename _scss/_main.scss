@@ -31,13 +31,13 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 1.953rem;
-  margin-bottom: 1.953rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 h2 {
-  font-size: 1.563rem;
-  margin-bottom: 1.563rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
@@ -45,9 +45,19 @@ h3 {
   margin-bottom: 1.25rem;
 }
 
-h4, .large {
+h4,
+.large {
   font-weight: 400;
   font-size: 1.125rem;
+}
+
+.huge {
+  font-weight: 700;
+  font-size: 3rem;
+
+  @include media-query($phone) {
+    font-size: 2rem;
+  }
 }
 
 .sc {
@@ -253,15 +263,7 @@ hr {
   margin-top: 4rem;
 
   @include media-query($tablet) {
-    margin-top: 2rem;
-  }
-
-  .title {
-    br {
-      @include media-query($phone) {
-        display: none;
-      }
-    }
+    margin-top: 3rem;
   }
 }
 
