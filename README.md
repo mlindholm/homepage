@@ -1,4 +1,3 @@
-Here be my new home on the internets soon.
+My home on the internet
 
-1. Install Jekyll `gem install jekyll`
-2. Run Jekyll `jekyll serve`
+Stuff used: tachyons, h5bp, zepto, gh-pages
