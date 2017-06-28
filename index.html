@@ -12,12 +12,11 @@
     <link rel="stylesheet" href="main.css"/>
 </head>
 <body class="sans-serif lh-copy dark-gray bg-white">
-    <div class="pa3 pa5-ns mw7 center">
 
+    <div class="pa3 pa5-ns mw7 center">
         <div class="tc mv4">
             <img src="https://www.gravatar.com/avatar/a99d3b485de42ba1f8e0fc81e1cb3d65?s=320" width="160" height="160" class="br-100 mt2">
         </div>
-
         <h1 class="lh-title near-black">Mathias Lindholm is a product designer from Helsinki, currently working at <a href="https://reaktor.com" class="link near-black bb b--black-10 hover-red">Reaktor</a></h1>
         <p>I’m passioned about turning complex problems into simple and elegant solutions. Most of my days are spent doing user interface design, prototyping and user testing. Coming from a developer background, I do enjoy some occasional coding.</p>
         <p>You can find me on <a href="http://twitter.com/#!/thisismatu" class="link dark-gray bb b--black-10 hover-blue">Twitter</a>, <a href="https://dribbble.com/thisismatu" class="link dark-gray bb b--black-10 hover-hot-pink">Dribble</a>, <a href="http://www.flickr.com/photos/matu187/" class="link dark-gray bb b--black-10 hover-light-purple">Flickr</a> and <a href="https://github.com/mlindholm" class="link dark-gray bb b--black-10 hover-silver">Github</a></p>
@@ -47,16 +46,19 @@
         </div>
 
         <footer class="pt4">
-            <p class="f6 silver">&copy; 2017 Mathias Lindholm</p>
+            <div class="flex justify-between">
+                <p class="ma0 f6 silver">&copy; 2017 Mathias Lindholm</p>
+                <a href="#" id="toggle" class="dib">
+                    <div id="outer" class="ba bw1 b--moon-gray br-pill relative" style="width: 32px; height: 16px;">
+                        <div id="inner" class="ba bw1 b--moon-gray br-pill absolute" style="width: 10px; height: 10px; margin: 1px"></div>
+                    </div>
+                </a>
+            </div>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
     <script>
-        var anchors = document.getElementsByTagName('a');
-        for (var i=0; i<anchors.length; i++){
-            var anchor = anchors[i];
-            anchor.getAttribute("href") && anchor.hostname !== location.hostname && (anchor.target = "_blank")
-        }
-
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
         e=o.createElement(i);r=o.getElementsByTagName(i)[0];
