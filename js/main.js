@@ -5,15 +5,15 @@ $( document ).ready(function() {
     $('#toggle').click(function(e) {
         e.preventDefault()
         if (nightmode == false) {
-            $('.bg-white').toggleClass('bg-white bg-near-black');
-            $('.dark-gray').toggleClass('dark-gray near-white');
-            $('.blue').toggleClass('blue light-blue');
+            $('.bg-white').toggleClass('bg-white bg-oc-gray-9');
+            $('.oc-gray-8').toggleClass('oc-gray-8 oc-gray-1');
+            $('.oc-blue-8').toggleClass('oc-blue-8 oc-blue-4');
             $('#inner').animate({left: '+=16px'}, 'fast')
             nightmode = true
         } else {
-            $('.bg-near-black').toggleClass('bg-near-black bg-white');
-            $('.near-white').toggleClass('near-white dark-gray');
-            $('.light-blue').toggleClass('light-blue blue');
+            $('.bg-oc-gray-9').toggleClass('bg-oc-gray-9 bg-white');
+            $('.oc-gray-1').toggleClass('oc-gray-1 oc-gray-8');
+            $('.oc-blue-4').toggleClass('oc-blue-4 oc-blue-8');
             $('#inner').animate({left: '-=16px'}, 'fast')
             nightmode = false
         }
