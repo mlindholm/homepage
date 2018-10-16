@@ -1,0 +1,19 @@
+html {
+  font-size: 20px
+}
+
+.lh-loose {
+  line-height: 1.7
+}
+
+.flex-shrink {
+  flex-shrink: 0
+}
+
+.bw1 {
+  border-width: 2px
+}
+
+.link {
+  outline: none
+}
