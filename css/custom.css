@@ -6,10 +6,6 @@ html {
   line-height: 1.7
 }
 
-.flex-shrink {
-  flex-shrink: 0
-}
-
 .bw1 {
   border-width: 2px
 }
