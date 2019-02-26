@@ -1,9 +1,5 @@
-html {
-  font-size: 20px
-}
-
-.lh-loose {
-  line-height: 1.7
+.lh-fixed {
+  line-height: 24px;
 }
 
 .bw1 {
@@ -12,4 +8,13 @@ html {
 
 .link:focus {
   outline: none;
+}
+
+.rotate {
+  -webkit-transition: -webkit-transform 15s linear;
+  transition: transform 15s linear;
+}
+.rotate:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
