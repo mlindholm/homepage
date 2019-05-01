@@ -1,13 +1,13 @@
 html {
-  font-size: 17px
+  font-size: 20px
 }
 
-.lh-fixed {
-  line-height: 26px;
+.source-serif {
+  font-family: 'Source Serif Pro', serif;
 }
 
-.bw1 {
-  border-width: 2px
+.source-sans {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .link:focus {
@@ -18,6 +18,7 @@ html {
   -webkit-transition: -webkit-transform 15s linear;
   transition: transform 15s linear;
 }
+
 .rotate:hover {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
