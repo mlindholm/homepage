@@ -2,12 +2,16 @@ html {
   font-size: 20px
 }
 
-.source-serif {
-  font-family: 'Source Serif Pro', serif;
+.measure-wide {
+  max-width: 36em;
 }
 
-.source-sans {
-  font-family: 'Source Sans Pro', sans-serif;
+.gray {
+  color: #6C737A;
+}
+
+.inter {
+  font-family: 'Inter', sans-serif;
 }
 
 .link:focus {
