@@ -1,7 +1,27 @@
-.inter {
-  font-family: 'Inter', sans-serif;
+.work-sans {
+  font-family: 'Work Sans', sans-serif;
 }
 
 .measure-wide {
-  max-width: 40em;
+  max-width: 42em;
+}
+
+.link:focus {
+  outline: none;
+}
+
+.lh-loose {
+  line-height: 1.75;
+}
+
+.w6 {
+  width: 24rem;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none
+}
+
+.scrolling-touch {
+  -webkit-overflow-scrolling: touch
 }
