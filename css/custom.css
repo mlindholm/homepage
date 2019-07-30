@@ -1,29 +1,27 @@
-html {
-  font-size: 20px
+.work-sans {
+  font-family: 'Work Sans', sans-serif;
 }
 
 .measure-wide {
-  max-width: 36em;
-}
-
-.gray {
-  color: #6C737A;
-}
-
-.inter {
-  font-family: 'Inter', sans-serif;
+  max-width: 42em;
 }
 
 .link:focus {
   outline: none;
 }
 
-.rotate {
-  -webkit-transition: -webkit-transform 5s ease-in-out;
-  transition: transform 5s ease-in-out;
+.lh-loose {
+  line-height: 1.75;
 }
 
-.rotate:hover {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
+.w6 {
+  width: 24rem;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none
+}
+
+.scrolling-touch {
+  -webkit-overflow-scrolling: touch
 }
