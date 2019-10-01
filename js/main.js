@@ -1,5 +1,4 @@
 var links = document.links
-
 for (var i = 0, linksLength = links.length; i < linksLength; i++) {
   const color = getComputedStyle(links[i], null).getPropertyValue('color').toString()
   if (links[i].hostname != window.location.hostname && !links[i].href.match(/^mailto\:/)) {
@@ -7,3 +6,7 @@ for (var i = 0, linksLength = links.length; i < linksLength; i++) {
     links[i].rel = 'noopener'
   }
 }
+
+var year = document.querySelector('.year')
+var currentYear = new Date().getFullYear()
+year.innerHTML = currentYear
