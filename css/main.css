@@ -28,8 +28,14 @@ body {
   color: var(--black);
   line-height: 1.55;
   max-width: 60rem;
-  padding: 2rem;
+  padding: 2rem 1rem;
   margin: 0 auto;
+}
+
+@media (min-width: 40rem) {
+  body {
+    padding: 2rem;
+  }
 }
 
 h1, h2, h3, h4 {
