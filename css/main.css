@@ -17,7 +17,7 @@ html {
   -webkit-font-feature-settings: 'liga' 1, 'calt' 1, 'ss01' 1;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 45rem) {
   html {
     font-size: 18px;
   }
@@ -32,7 +32,7 @@ body {
   margin: 0 auto;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 45rem) {
   body {
     padding: 2rem;
   }
@@ -76,7 +76,7 @@ a:hover {
   padding-bottom: 2.5rem;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 45rem) {
   .navigation {
     display: grid;
     align-items: baseline;
@@ -129,7 +129,7 @@ a:hover {
   height: auto;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 45rem) {
   .hero-image {
     margin-bottom: 5rem;
   }
@@ -139,7 +139,7 @@ a:hover {
   margin: 4rem 0;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 45rem) {
   .block {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -169,7 +169,7 @@ a:hover {
   font-size: 0.8rem;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 45rem) {
   .footer {
     padding-top: 2rem;
   }
