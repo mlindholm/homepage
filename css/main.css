@@ -114,6 +114,15 @@ a:hover {
   margin-right: 0;
 }
 
+.intro {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.intro > p {
+  margin: 0.5rem 0;
+}
+
 .hero-image {
   display: block;
   max-width: 100%;
