@@ -76,8 +76,42 @@ a:hover {
   padding-bottom: 2.5rem;
 }
 
-.navigation a {
+@media (min-width: 40rem) {
+  .navigation {
+    display: grid;
+    align-items: baseline;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.navigation-title {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.navigation-title > a {
   border: none;
+}
+
+.navigation-links {
+  display: flex;
+  justify-content: baseline;
+}
+
+.navigation-links > a {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border: none;
+}
+
+.navigation-links > a:first-child {
+  padding-left: 0;
+}
+
+.navigation-links > a:last-child {
+  margin-right: 0;
 }
 
 .hero-image {
