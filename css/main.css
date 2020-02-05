@@ -1,7 +1,8 @@
 :root{
-  --accent: #00e;
-  --primary: #222;
-  --secondary: grey;
+  --accent: mediumblue;
+  --primary: black;
+  --secondary: gray;
+  --background: white;
 }
 
 *, *:before, *:after {
@@ -21,6 +22,7 @@ body {
   max-width:  35rem;
   line-height: 1.6;
   color: var(--primary);
+  background: var(--background);
   padding: 0;
 }
 
