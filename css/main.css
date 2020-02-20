@@ -1,8 +1,8 @@
 :root{
-  --accent: mediumblue;
-  --primary: black;
-  --secondary: gray;
-  --background: white;
+  --accent: #4169E1;
+  --primary: #111;
+  --secondary: #808080;
+  --background: #fff;
 }
 
 *, *:before, *:after {
