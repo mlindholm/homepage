@@ -48,7 +48,8 @@ table td {
 }
 
 td:first-child {
-  width: 7rem;
+  font-variant-numeric: tabular-nums;
+  width: 6rem;
 }
 
 a {
