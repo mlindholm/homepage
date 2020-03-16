@@ -6,15 +6,15 @@ const Backpacking = () => (
   <>
     <Head>
       <title>Backpacking | Mathias Lindholm</title>
-      <meta name="author" content="Mathias Lindholm">
-      <meta name="description" content="Places i've been to, photos of my trips and the gear that i use">
+      <meta name="author" content="Mathias Lindholm" />
+      <meta name="description" content="Places i've been to, photos of my trips and the gear that i use" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="shortcut icon" href="https://www.gravatar.com/avatar/a99d3b485de42ba1f8e0fc81e1cb3d65?s=64" />
     </Head>
     <Header
-      image="/camping_1f3d5.png"
-      title="Gone Backpacking"
-      description="Places i've been to, photos and my gear"
+      image="https://www.gravatar.com/avatar/a99d3b485de42ba1f8e0fc81e1cb3d65?s=250"
+      title="Mathias Lindholm"
+      description="📍 Helsinki, Finland"
     />
     <main>
       <section>
@@ -26,7 +26,7 @@ const Backpacking = () => (
         <p>Liesjärvi is a small national park with quite nice lake scenery and trails of varying difficulty. The ridge across
         the lake Liesjärvi is beautiful. It's reachable by a 1,5h bus ride from Helsinki, making it an excellent weekend
         getaway even without a car. There's only a few lean-to shelters and it has a kota, but unfortunately the kota was
-      closed due to vandalism.</p>
+        closed due to vandalism.</p>
         <table>
           <tr>
             <td>2018/08</td>
@@ -48,9 +48,7 @@ const Backpacking = () => (
           <a href="http://www.luontoon.fi/teijo">Website</a> &middot;
           <a href="https://goo.gl/maps/M2xLHqNzGbgib26U8">Map</a>
         </p>
-        <p>Teijo was a place i've wanted to visit for some time and it was totally worth it. There's a lot of narrow duckboards
-        as it's quite a lot of bogs/swamps here. Plenty of lean-to shelters to choose from, and all of them were really nice.
-      Only a 1,5h drive from Helsinki and if you're thirsty you can visit the Mathildedal brewery.</p>
+        <p>Teijo was a place i've wanted to visit for some time and it was totally worth it. There's a lot of narrow duckboards as it's quite a lot of bogs/swamps here. Plenty of lean-to shelters to choose from, and all of them were really nice. Only a 1,5h drive from Helsinki and if you're thirsty you can visit the Mathildedal brewery.</p>
         <table>
           <tr>
             <td>2018/02</td>
