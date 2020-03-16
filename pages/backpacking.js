@@ -5,9 +5,9 @@ import Header from '../components/Header'
 const Backpacking = () => (
   <>
     <Head>
-      <title>Mathias Lindholm</title>
-      <meta name="author" content="Mathias Lindholm" />
-      <meta name="description" content="Mathias Lindholm is a product designer from Helsinki" />
+      <title>Backpacking | Mathias Lindholm</title>
+      <meta name="author" content="Mathias Lindholm">
+      <meta name="description" content="Places i've been to, photos of my trips and the gear that i use">
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="shortcut icon" href="https://www.gravatar.com/avatar/a99d3b485de42ba1f8e0fc81e1cb3d65?s=64" />
     </Head>
