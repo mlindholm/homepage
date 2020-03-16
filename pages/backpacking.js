@@ -12,9 +12,9 @@ const Backpacking = () => (
       <link rel="shortcut icon" href="https://www.gravatar.com/avatar/a99d3b485de42ba1f8e0fc81e1cb3d65?s=64" />
     </Head>
     <Header
-      image="https://www.gravatar.com/avatar/a99d3b485de42ba1f8e0fc81e1cb3d65?s=250"
-      title="Mathias Lindholm"
-      description="📍 Helsinki, Finland"
+      image="/camping_1f3d5.png"
+      title="Gone Backpacking"
+      description="Places i've been to, photos and my gear"
     />
     <main>
       <section>
