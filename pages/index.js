@@ -20,7 +20,7 @@ const Index = () => (
       <section>
         <p>I’m a product designer from Helsinki with a love for mountain biking, pizza, craft beer and the great outdoors.</p>
         <p>For the past 10 years, I’ve worked as a designer across various business sectors, delivering successful digital products in outstanding teams.</p>
-        <p>Currently I’m working at <a href="https://about.neverthink.tv" target="_blank" rel="noopener noreferrer">>Neverthink</a> as VP&nbsp;of&nbsp;Product.</p>
+        <p>Currently I’m working at <a href="https://about.neverthink.tv" target="_blank" rel="noopener noreferrer">Neverthink</a> as VP&nbsp;of&nbsp;Product.</p>
       </section>
       <section>
         <h2>Highlights</h2>
@@ -31,15 +31,15 @@ const Index = () => (
           </tr>
           <tr>
             <td>2018</td>
-            <td>Shut down <a href="https://dookie-1a65d.firebaseapp.com" target="_blank" rel="noopener noreferrer">>Dookie</a></td>
+            <td>Shut down <a href="https://dookie-1a65d.firebaseapp.com" target="_blank" rel="noopener noreferrer">Dookie</a></td>
           </tr>
           <tr>
             <td>2016</td>
-            <td>Released <a href="https://simplepinapp.com/" target="_blank" rel="noopener noreferrer">>Simplepin</a></td>
+            <td>Released <a href="https://simplepinapp.com/" target="_blank" rel="noopener noreferrer">Simplepin</a></td>
           </tr>
           <tr>
             <td>2015</td>
-            <td>Lead the rebranding of <a href="https://amplerbikes.com/" target="_blank" rel="noopener noreferrer">>Ampler</a></td>
+            <td>Lead the rebranding of <a href="https://amplerbikes.com/" target="_blank" rel="noopener noreferrer">Ampler</a></td>
           </tr>
           <tr>
             <td>2013</td>
@@ -47,7 +47,7 @@ const Index = () => (
           </tr>
           <tr>
             <td>2012</td>
-            <td>Designed my first typeface <a href="https://github.com/mlindholm/resultat" target="_blank" rel="noopener noreferrer">>Resultat</a></td>
+            <td>Designed my first typeface <a href="https://github.com/mlindholm/resultat" target="_blank" rel="noopener noreferrer">Resultat</a></td>
           </tr>
           <tr>
             <td>2008</td>
@@ -60,15 +60,15 @@ const Index = () => (
         <table>
           <tr>
             <td>Twitter</td>
-            <td><a href="https://twitter.com/thisismatu" target="_blank" rel="noopener noreferrer">>@thisismatu</a></td>
+            <td><a href="https://twitter.com/thisismatu" target="_blank" rel="noopener noreferrer">@thisismatu</a></td>
           </tr>
           <tr>
             <td>GitHub</td>
-            <td><a href="https://github.com/mlindholm" target="_blank" rel="noopener noreferrer">>@mlindholm</a></td>
+            <td><a href="https://github.com/mlindholm" target="_blank" rel="noopener noreferrer">@mlindholm</a></td>
           </tr>
           <tr>
             <td>Dribble</td>
-            <td><a href="https://dribbble.com/mlindholm/" target="_blank" rel="noopener noreferrer">>@mlindholm</a></td>
+            <td><a href="https://dribbble.com/mlindholm/" target="_blank" rel="noopener noreferrer">@mlindholm</a></td>
           </tr>
         </table>
       </section>
