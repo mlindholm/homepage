@@ -11,7 +11,7 @@
 
 html {
   font-size: 125%;
-  font-family: Georgia, serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
   text-rendering: optimizeLegibility;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.25;
   margin-top: 2rem;
@@ -51,7 +51,7 @@ table td {
 }
 
 td:first-child {
-  width: 5rem;
+  width: 4rem;
 }
 
 a {
@@ -79,7 +79,7 @@ header img {
 }
 
 header h1 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-top: 0;
   margin-bottom: .25rem;
 }
