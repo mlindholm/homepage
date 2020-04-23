@@ -16,15 +16,21 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1280px) {
   html {
     font-size: 112.5%;
   }
 }
 
+@media only screen and (max-width: 640px) {
+  html {
+    font-size: 100%;
+  }
+}
+
 body {
   margin: 5vw auto;
-  max-width:  34rem;
+  max-width:  36rem;
   line-height: 1.5;
   color: var(--secondary);
   background: var(--background);
