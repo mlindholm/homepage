@@ -1,7 +1,8 @@
 :root{
   --accent: #36c;
-  --primary: #111;
-  --secondary: #808080;
+  --primary: #212529;
+  --secondary: #343a40;
+  --tertiary: #868e96;
   --background: #fff;
 }
 
@@ -25,12 +26,13 @@ body {
   margin: 5vw auto;
   max-width:  34rem;
   line-height: 1.5;
-  color: var(--primary);
+  color: var(--secondary);
   background: var(--background);
   padding: 1rem;
 }
 
 h1, h2, h3 {
+  color: var(--primary);
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.25;
@@ -86,6 +88,6 @@ header h1 {
 
 footer p,
 header p {
-  color: var(--secondary);
+  color: var(--tertiary);
   margin: 0;
 }
