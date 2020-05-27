@@ -4,7 +4,7 @@ const colors = ['royalblue', 'darkviolet', 'green', 'darkorange', 'deeppink']
 const currentYear = new Date().getFullYear()
 
 const Index = () => {
-  const randomColor = colors[Math.floor(Math.random() * colors.length)]
+  const random = Math.floor(Math.random() * colors.length)
   return(
     <>
       <Head>
@@ -85,10 +85,10 @@ const Index = () => {
 
       <style jsx>{`
         a {
-          color: ${randomColor}
+          color: ${colors[random]}
         }
         .photo {
-          background-color: ${randomColor}
+          background-color: ${colors[random]}
         }
       `}</style>
     </>
