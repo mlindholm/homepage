@@ -1,11 +1,10 @@
 import Head from 'next/head'
 
-const colors = ['royalblue', 'darkviolet', 'green', 'darkorange', 'deeppink']
+const colors = ['royalblue', 'darkviolet', 'green', 'darkorange', 'crimson']
 const currentYear = new Date().getFullYear()
 
-const Index = () => {
-  const random = Math.floor(Math.random() * colors.length)
-  return(
+function Index({ color }) {
+  return (
     <>
       <Head>
         <title>Mathias Lindholm</title>
@@ -85,14 +84,19 @@ const Index = () => {
 
       <style jsx>{`
         a {
-          color: ${colors[random]}
+          color: ${color}
         }
         .photo {
-          background-color: ${colors[random]}
+          background-color: ${color}
         }
       `}</style>
     </>
   )
+}
+
+export async function getServerSideProps() {
+  const color = colors[Math.floor(Math.random() * colors.length)]
+  return { props: { color } }
 }
 
 export default Index
