@@ -60,7 +60,7 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: grayscale(100%) opacity(40%);
+  filter: opacity(40%);
 }
 
 .header {
