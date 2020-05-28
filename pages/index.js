@@ -78,7 +78,7 @@ function Index({ color }) {
           </table>
         </main>
         <footer className="footer">
-          © 2009&thinsp;–&thinsp;{currentYear} Mathias Lindholm
+          ©&thinsp;{currentYear} Mathias Lindholm
         </footer>
       </div>
 
