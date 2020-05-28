@@ -12,7 +12,7 @@ function Index({ color }) {
         <meta name="description" content="Mathias Lindholm is a product designer from Helsinki" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="shortcut icon" href="https://www.gravatar.com/avatar/a99d3b485de42ba1f8e0fc81e1cb3d65?s=64" />
-        <link href="https://fonts.googleapis.com/css2?family=Yrsa:wght@400;500&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Yrsa:wght@400;600&display=swap" rel="stylesheet" />
       </Head>
       <div className="photo">
         <div className="photo-inner" />
