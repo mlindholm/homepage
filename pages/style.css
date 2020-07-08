@@ -8,7 +8,7 @@ body {
   font-family: 'Yrsa', 'Times New Roman', serif;
   text-rendering: optimizeLegibility;
   line-height: 1.4;
-  color: #111;
+  color: #222;
   background: #fff;
 }
 
@@ -100,5 +100,12 @@ a:hover {
   .photo {
     height: 25vh;
     min-height: auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #222;
+    color: #fff;
   }
 }
