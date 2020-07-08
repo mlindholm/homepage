@@ -1,7 +1,5 @@
 import Head from 'next/head'
 
-const currentYear = new Date().getFullYear()
-
 const Index = () => {
   return (
     <>
@@ -72,9 +70,6 @@ const Index = () => {
           </tbody>
         </table>
       </main>
-      <footer className="footer">
-        ©&thinsp;{currentYear} Mathias Lindholm
-      </footer>
     </>
   )
 }
