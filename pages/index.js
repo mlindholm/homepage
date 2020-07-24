@@ -9,7 +9,7 @@ const Index = () => {
         <meta name="description" content="Mathias Lindholm is a product designer from Helsinki" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="shortcut icon" href="https://www.gravatar.com/avatar/a99d3b485de42ba1f8e0fc81e1cb3d65?s=64" />
-        <link href="https://fonts.googleapis.com/css2?family=Yrsa:wght@400;600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
       </Head>
       <h1>Mathias Lindholm</h1>
       <p>I’m a product designer from Helsinki with a love for mountain biking, pizza, craft beer and the great outdoors.</p>
