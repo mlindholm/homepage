@@ -1,0 +1,63 @@
+:root {
+  --foreground: #14110b;
+  --background: #FAF8F4;
+  --font-sans: 'Inter', sans-serif;
+}
+
+html,
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.55;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  margin-top: 1.5rem;
+}
+
+p {
+  max-width: 36em;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  transition: opacity .15s ease-in;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 2px .5rem 2px 0;
+  vertical-align: top;
+}
+
+.container {
+  padding: 5%;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--background);
+    background: var(--foreground);
+  }
+}
