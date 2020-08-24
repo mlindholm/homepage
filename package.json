@@ -1,15 +1,16 @@
 {
-  "name": "testinen",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
   "dependencies": {
-    "next": "9.3.2",
-    "react": "16.13.0",
-    "react-dom": "16.13.0"
+    "@11ty/eleventy": "^0.11.0",
+    "clean-css": "^4.2.3"
+  },
+  "name": "homepage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mlindholm/homepage.git",
+  "author": "Mathias Lindholm <mathias.lindholm@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
   }
 }
