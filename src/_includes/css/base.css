@@ -1,6 +1,7 @@
 :root {
-  --foreground: #14110b;
-  --background: #FAF8F4;
+  --foreground: #000;
+  --background: #fff;
+  --secondary: #666;
   --font-sans: 'Inter', sans-serif;
 }
 
@@ -35,11 +36,11 @@ p {
 a {
   color: inherit;
   text-decoration: underline;
-  transition: opacity .15s ease-in;
+  transition: color .15s ease-in;
 }
 
 a:hover {
-  opacity: 0.6;
+  color: var(--secondary);
 }
 
 table {
