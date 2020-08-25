@@ -57,6 +57,12 @@ td {
   padding: 5%;
 }
 
+.footer {
+  color: var(--secondary);
+  padding: 5%;
+  padding-top: 0;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     color: var(--background);

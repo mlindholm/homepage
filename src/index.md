@@ -21,11 +21,3 @@ Currently I’m working at [Neverthink](https://about.neverthink.tv/).
 | 2013 | Made the switch from ad agency to tech consultancy |
 | 2012 | Designed my first typeface [Resultat](https://github.com/mlindholm/resultat) |
 | 2008 | Started my design studies |
-
-## Elsewhere
-
-| | |
-|-|-|
-| Twitter | [@thisismatu](https://twitter.com/thisismatu) |
-| GitHub | [@mlindholm](https://github.com/mlindholm) |
-| Dribble | [@mlindholm](https://dribbble.com/mlindholm/) |
