@@ -2,7 +2,7 @@
   --foreground: #000;
   --background: #fff;
   --secondary: #666;
-  --font-sans: 'Inter', sans-serif;
+  --font-sans: 'Work Sans', sans-serif;
 }
 
 html,
@@ -10,7 +10,8 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-sans);
-  font-size: 18px;
+  font-size: 16px;
+  font-size: min(max(1rem, 2vw), 24px);
   line-height: 1.55;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -18,7 +19,7 @@ body {
 
 h1, h2 {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.25;
 }
 
