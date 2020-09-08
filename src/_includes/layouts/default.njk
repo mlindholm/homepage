@@ -9,11 +9,7 @@
     <meta name="description" content="{{ renderData.description or description or site.description }}">
     <link href="https://www.gravatar.com/avatar/a99d3b485de42ba1f8e0fc81e1cb3d65?s=64" rel="shortcut icon">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
-    {% set css %}
-      {% include "css/normalize.css" %}
-      {% include "css/base.css" %}
-    {% endset %}
-    <style>{{ css | cssmin | safe }}</style>
+    {% include "style.njk" %}
     {% include "gtag.njk" %}
   </head>
   <body>

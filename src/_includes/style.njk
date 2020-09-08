@@ -1,0 +1,5 @@
+{% set css %}
+  {% include "css/normalize.css" %}
+  {% include "css/base.css" %}
+{% endset %}
+<style>{{ css | cssmin | safe }}</style>

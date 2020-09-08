@@ -14,7 +14,7 @@ module.exports = function (config) {
       output: 'dist',
     },
     passthroughFileCopy: true,
-    templateFormats: ['njk', 'md', 'css'],
+    templateFormats: ['njk', 'md'],
     htmlTemplateEngine: 'njk'
   }
 }
