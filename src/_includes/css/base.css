@@ -5,13 +5,21 @@
   --font-sans: 'Work Sans', sans-serif;
 }
 
-html,
+html {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-sans);
-  font-size: 20px;
-  font-size: calc(16px + (24 - 16) * ((100vw - 360px) / (1920 - 360)));
+  font-size: 1rem;
   line-height: 1.55;
   letter-spacing: -0.01em;
   text-rendering: optimizeLegibility;
