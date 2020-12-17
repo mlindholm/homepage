@@ -2,7 +2,7 @@
   --foreground: #000;
   --background: #fff;
   --secondary: #666;
-  --font-sans: 'Work Sans', sans-serif;
+  --font-sans: 'basiercircle', sans-serif;
 }
 
 html {
@@ -21,7 +21,6 @@ body {
   font-family: var(--font-sans);
   font-size: 1rem;
   line-height: 1.55;
-  letter-spacing: -0.01em;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -71,6 +70,10 @@ td {
   color: var(--secondary);
   padding: 5%;
   padding-top: 0;
+}
+
+.footer a {
+  text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {

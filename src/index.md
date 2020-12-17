@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Mathias<br/>Lindholm
+# Mathias Lindholm
 
 I’m a Helsinki-based designer with a love for mountain biking, pizza, craft beer and the great outdoors.
 

@@ -8,6 +8,8 @@ module.exports = function (config) {
     return new CleanCSS({}).minify(code).styles;
   });
 
+  config.addPassthroughCopy('./src/fonts');
+
   return {
     dir: {
       input: 'src',
