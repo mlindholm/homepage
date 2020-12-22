@@ -10,14 +10,6 @@ For the past 10 years, I’ve worked as a designer across various business secto
 
 Currently I’m working at [Neverthink](https://about.neverthink.tv/).
 
-## Highlights
-
-| | |
-|-|-|
-| 2018 | Took a leap of faith and joined a small startup |
-| 2018 | Shut down [Dookie](https://dookie-1a65d.firebaseapp.com/) |
-| 2016 | Released [Simplepin](https://simplepinapp.com/) |
-| 2015 | Lead the rebranding of [Ampler](https://amplerbikes.com/) |
-| 2013 | Made the switch from ad agency to tech consultancy |
-| 2012 | Designed my first typeface [Resultat](https://github.com/mlindholm/resultat) |
-| 2008 | Started my design studies |
+- [Twitter](https://twitter.com/thisismatu)
+- [GitHub](https://github.com/mlindholm)
+- [Dribble](https://dribbble.com/mlindholm)

@@ -2,7 +2,6 @@
   --foreground: #000;
   --background: #fff;
   --secondary: #666;
-  --font-sans: 'basiercircle', sans-serif;
 }
 
 html {
@@ -18,25 +17,29 @@ html {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-sans);
+  font-family: 'basiercircle', sans-serif;
   font-size: 1rem;
   line-height: 1.55;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2 {
-  font-size: 1rem;
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--background);
+    background: var(--foreground);
+  }
+}
+
+h1, h2, h3 {
+  font-size: 1.05rem;
   font-weight: 600;
   line-height: 1.25;
 }
 
 h1 {
   margin-top: 0;
-}
-
-h2 {
-  margin-top: 2rem;
+  margin-bottom: 5%;
 }
 
 p {
@@ -45,7 +48,6 @@ p {
 
 a {
   color: inherit;
-  text-decoration: underline;
   transition: color .15s ease-in;
 }
 
@@ -53,32 +55,33 @@ a:hover {
   color: var(--secondary);
 }
 
-table {
-  border-collapse: collapse;
+ul {
+  color: var(--secondary);
+  display: flex;
+  list-style: none;
+  margin-left: 0;
+  margin-top: 5%;
+  padding: 0;
 }
 
-td {
-  padding: 2px .5rem 2px 0;
-  vertical-align: top;
+ul li::before {
+  content: '·';
+  padding: 0 0.5rem;
+}
+
+ul li:first-child::before {
+  content: none;
+  padding: 0;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+ul a:hover {
+  color: var(--foreground);
 }
 
 .container {
   padding: 5%;
-}
-
-.footer {
-  color: var(--secondary);
-  padding: 5%;
-  padding-top: 0;
-}
-
-.footer a {
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    color: var(--background);
-    background: var(--foreground);
-  }
 }
